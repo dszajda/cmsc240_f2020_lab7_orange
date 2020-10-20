@@ -13,7 +13,7 @@ class Triangle : public Shape
 
 	void Triangle::print(){
 		Shape::print();
-		cout << Width: " << this->width << endl;
+		cout << "Width: " << this->width << endl;
 		cout << "Height: " << this->height << endl;
 	}
 
