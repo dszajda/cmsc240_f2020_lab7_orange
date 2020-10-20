@@ -16,7 +16,7 @@ class Shape
   }
 
   void print(){
-
+    cout << "Shape Name: " << this->shapeName << endl;
   }
         // virtual void print();      // for later testing
         // virtual void print() = 0;  // for later testing
