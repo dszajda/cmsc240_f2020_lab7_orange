@@ -8,7 +8,7 @@ class Triangle : public Shape
 {
 
 private:
-	double base;
+  double base;
   double height;
 
 public:

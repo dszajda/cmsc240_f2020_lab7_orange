@@ -6,15 +6,14 @@
 
 class Circle : public Shape 
 {
+	private:
+		double radius;
 
-private:
-	double radius;
-
-public:
-	Circle(std::string shapeName, double radVal);
-	~Circle();
-	void print();
-	double getArea();
+	public:
+		Circle(std::string shapeName, double radVal);
+		~Circle();
+		void print();
+		double getArea();
 };
 
 #endif

@@ -1,25 +1,20 @@
-#include <string>
-#include <Shape.h>
+#include "Shape.h"
 
-class Shape
-{
-  Shape(std::string shapeName){
+
+  Shape::Shape(std::string shapeName)
+  {
     name = shapeName;
   }
 
-  ~Shape(){
-
+  Shape::~Shape(){}
+  double Shape::getArea()
+  {
+    return 0.0;
   }
-
-  double getArea(){
-
-  }
-
-  void print(){
-    cout << "Shape Name: " << this->shapeName << endl;
+  void Shape::print(){
+    std::cout << "Shape Name: " << this->name << std::endl;
   }
         // virtual void print();      // for later testing
         // virtual void print() = 0;  // for later testing
-};
 
-#endif
+
