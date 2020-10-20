@@ -12,5 +12,7 @@ tester: $(OBJS)
 	$(CC) $(CCFLAGS) -c $<
 %.o: %.cpp
 	$(CC) $(CCFLAGS) -c $<
+Rectangle.o: Rectangle.h Rectangle.cpp Shape.cpp Shape.h
+
 clean:
 	/bin/rm -f a.out $(OBJS) $(EXECS)
