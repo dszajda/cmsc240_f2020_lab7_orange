@@ -1,11 +1,7 @@
-#include<string>
-#include <iostream>
-#include"Shape.h"
 #include "Triangle.h"
 
-class Triangle : public Shape
-{
-	Triangle::Triangle(std::string shapeName, double base, double height)
+
+Triangle::Triangle(std::string shapeName, double base, double height)
 	 : Shape(shapeName), base{base}, height{height} {}
 
 
@@ -13,15 +9,14 @@ class Triangle : public Shape
 
 	void Triangle::print(){
 		Shape::print();
-		cout << "Width: " << this->width << endl;
-		cout << "Height: " << this->height << endl;
+		std::cout << "base: " << this->base << std::endl;
+		std::cout << "Height: " << this->height << std::endl;
 	}
 
-	double getArea()
+	double Triangle::getArea()
 	{
 		 double area = 0.5 * this->base * this->height;
 
 		 return area;
 
 	}
-};
