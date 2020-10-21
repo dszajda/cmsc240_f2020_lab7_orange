@@ -3,6 +3,7 @@
 #include "Shape.h"
 #include "Circle.h"
 #include "Triangle.h"
+#include "Rectangle.h"
 using namespace std;
 
 
@@ -66,6 +67,36 @@ int main(){
 	delete circle3ptr;
 
 
+	cout << "------------------------------" << endl;
+	cout << "------------------------------" << endl;
+
+	cout << "---Testing Rectangle---" << endl;
+
+	cout << "   Rectangle1: " << endl;
+	Rectangle rec1 = Rectangle("Rectangle1", 2.1, 4.6);
+	rec1.print();
+	cout << "Expected: Rectangle1, width: 2.1, height: 4.6" << endl;
+	cout << "Rectangle1 Area: " << rec1.getArea() << "  Expected: 9.66" << endl;
+
+	cout << "------------------------------" << endl;
+
+	cout << "   Rectangle2: " << endl;
+	Rectangle rec2("Rectangle2", 2.8, 6.7);
+	Rectangle *rec2ptr = &rec2;
+	circle2ptr->print();
+	cout << "Expected: Rectangle2, height: 2.8, width: 6.7" << endl;
+	cout << "Rectangle2 Area: " << rec2ptr->getArea() << "  Expected: 18.76" << endl;
+
+	cout << "------------------------------" << endl;
+
+	cout << "   Rectangle3: " << endl;
+	Rectangle *rec3ptr = new Rectangle("Rectangle3", 9.8, 6.3);
+	rec3ptr->print();
+	cout << "Expected:  Rectangle3, height: 9.8, width: 6.3" << endl;
+	cout << "Rectangle3 Area: " << rec3ptr->getArea() << " Expected: 61.74" << endl;
+	delete rec3ptr;
+
+
 
 
 
@@ -73,3 +104,4 @@ int main(){
 
 	return 0;
 }
+
