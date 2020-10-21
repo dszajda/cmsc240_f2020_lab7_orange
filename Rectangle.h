@@ -4,18 +4,15 @@
 #include <string>
 #include "Shape.h"
 
-using namespace std;
-
 class Rectangle : public Shape
 {
 
     private:
-        string RecName;
         double RecWid;
         double RecHei;
 
     public:
-        Rectangle(std::string name, double width, double height);
+        Rectangle(std::string shapeName, double width, double height);
         ~Rectangle();
         double getArea();
         void print();
