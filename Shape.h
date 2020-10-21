@@ -14,7 +14,7 @@ class Shape
         ~Shape();
         double getArea();
         void print();
-        // virtual void print();      // for later testing
+        virtual void print();      // for later testing
         // virtual void print() = 0;  // for later testing
 };
 
